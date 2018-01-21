@@ -596,7 +596,7 @@ InlineLexer.prototype.output = function(src) {
     // tag
     if (cap = this.rules.tag.exec(src)) {
       src = src.substring(cap[0].length);
-      // TODO(alpert): Don't escape if sanitize is false
+      // TODO (alpert): Don't escape if sanitize is false gh:2
       out.push(cap[0]);
       continue;
     }
